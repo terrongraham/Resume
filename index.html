@@ -176,7 +176,7 @@
 		
       <div class="project" onclick="toggleProject(this)">
         <div class="row">
-          <div><h4 class="hover-underline">Microsoft Hybrid Workstream Survey Methodology Overhaul </h4></div>
+          <div><h4 class="hover-underline">Microsoft Employee Experience Survey Methodology Overhaul </h4></div>
           <div class="col-md-7">
             <div class="project-content">
               <p><h5>Project Context & Challenge</h5></p>
@@ -266,10 +266,23 @@
           <div><h4 class="hover-underline">Creating a data pipeline to analyze Microsoft's survey data programatically</h4></div>  
           <div class="col-md-7">
             <div class="project-content">
-              <p>
-                During my early days at Microsoft, my primary focus was analyzing respondent data and adjusting mailers to inform stakeholders. <strong>It quickly became apparent that more time to research would allow me to uncover novel insights, which was a more valuable use of time.</strong> To address the analysis hurdle, I developed a series of scripts designed to automate various aspects of data management. These scripts streamlined the organization of respondent data, validated survey rating confidence intervals, populated mailer files and finally fine-tuned and deployed a BART-large-MNLI topic modeling solution to classify open-ended responses. Fine-tuning increased accuracy from 61% to 83%. This change in process not only streamlined our data analysis but also introduced an objective tracking system, eliminating the need for extensive manual work and allowing greater consistency as we no longer relied on human ratings.</p>
-                <p> 
-                As part of the evolution of this system, I further automated the process, ensuring that every week, incoming responses were seamlessly processed and analyzed in real-time. This automation allowed us to track and compare trends in employee comments over time, providing invaluable insights into the evolving sentiments and needs of our workforce. <strong>By implementing this workflow, we significantly enhanced our ability to understand employee feedback, ultimately contributing to a more responsive and employee-centric approach within Microsoft.</strong></p>
+              <p><h5>Initial Challenges</h5></p>
+                <p>
+                  During my early days at Microsoft, my primary focus was analyzing respondent data and adjusting mailers to inform stakeholders. It quickly became apparent that more time to research would allow me to uncover novel insights, which was a more valuable use of time. To address the analysis hurdle, I developed a series of scripts designed to automate various aspects of data management. These scripts:
+                </p>
+
+                <ul>
+                  <li>Streamlined the organization of respondent data</li>
+                  <li>Validated survey rating confidence intervals</li>
+                  <li>Populated inner-company communications</li>
+                  <li>Fine-tuned and deployed a BART-large-MNLI topic modeling solution to classify open-ended responses</li>
+                </ul>
+				Fine-tuning increased topic classification accuracy from 61% to 83%. This change in process not only streamlined our data analysis but also introduced an objective tracking system, eliminating the need for extensive manual work and allowing greater consistency as we no longer relied on human ratings.
+				
+                <h5>Automated Real-Time Response Processing</h5>
+                <p>
+                  As part of the evolution of this system, I further automated the process, ensuring that every week, incoming responses were seamlessly processed and analyzed in real-time. This automation allowed us to track and compare trends in employee comments over time, providing invaluable insights into the evolving sentiments and needs of our workforce. By implementing this workflow, we significantly enhanced our ability to understand employee feedback, ultimately contributing to a more responsive and employee-centric approach within Microsoft.
+                </p>
             </div>
           </div>
           <div class="col-md-5">
@@ -284,12 +297,34 @@
           <div><h4 class="hover-underline">Engineering a data lake for digital acquisitions at Chase</h4></div>
           <div class="col-md-7">
             <div class="project-content">
-              <p>
-              To facilitate a unified product tracking system across Chase, I spearheaded a significant technical initiative aimed at constructing a robust data lake harnessing behavioral clickstream data associated with customer acquisition. The underlying behavioral database of this acquisition data repository was substantial, given that Chase.com ranks among the top 50 most frequently visited websites in the United States, <strong>with 800 million monthly visits and 6 billion page views</strong>. The query times for this expansive database were prohibitively long due to their size, and the data within it was not structured in a user-friendly manner, necessitating analysts to perform complex table joins to extract meaningful insights.</p>
-              <p>
-              My role involved architecting a faster, more intuitive database capable of analyzing acquisition activities across all consumer banking products. This process required a mastery of the data as well as the business. Data mastery was essential as it allowed selection of the right columns and unique indexes to speed up the process. Our efforts resulted in a significant boost in efficiency. <strong>Analysts experienced a more than 90% reduction in query time, allowing them to access crucial insights almost instantly, instead of in hours.</strong> Furthermore, we simplified the database structure, reducing the number of tables required to see an application journey from four to just one.</p>
-              <p>
-              At the end of the project, I'd developed an efficient Teradata script that transformed the dataset into a structured table, guaranteeing data integrity, efficiency, and scalability. This automation ensured that the data remained up-to-date even in my absence. The resulting data table offered us the capability to filter and analyze pivotal fields like product types and customer demographics, as well as what specific link drove traffic, thereby providing invaluable insights into our digital acquisition strategies and revenue generation. <strong>Moreover, it enabled data-driven assessments of advertising effectiveness and optimizations in user experience, significantly contributing to the bank's overall success.</strong> </p>
+              <p><h5>Project Overview</h5></p>
+                <p>
+                  To facilitate a unified product tracking system across Chase, I spearheaded a significant technical initiative aimed at constructing a robust data lake harnessing behavioral clickstream data associated with customer acquisition. The underlying behavioral database of this acquisition data repository was substantial, given that Chase.com ranks among the top 50 most frequently visited websites in the United States, with 800 million monthly visits and 6 billion page views.
+				</p>
+				<p>
+				  Initially, the query times for this expansive database were prohibitively long due to their size, and the data within it was not structured in a user-friendly manner, necessitating analysts to perform complex table joins to extract meaningful insights.
+                </p>
+			  <p><h5>Technical Challenge and Solution</h5></p>
+				My role involved architecting a faster, more intuitive database capable of analyzing acquisition activities across all consumer banking products. This process required a mastery of both the data and the business context. Data mastery was essential as it allowed selection of the right columns and unique indexes to speed up the process.
+                <ul>
+                  <li>Reduced analyst query times by over 90%, transforming insight generation from hours to near-instantaneous retrieval</li>
+                  <li>Simplified database structure, consolidating four complex tables into a single, streamlined table</li>
+                  <li>Developed an efficient Teradata script that automated data transformation while maintaining integrity and scalability</li>
+                </ul>
+                <h5>Project Impact</h5>
+                <p>
+                  The resulting data table offered unprecedented capabilities to filter and analyze pivotal fields such as:
+			    <ul>
+                  <li>Product types</li>
+                  <li>Customer Demographic</li>
+                  <li>Specific traffic-driving links</li>
+                </ul>
+					This solution provided invaluable insights into Chase's digital acquisition strategies and revenue generation. It enabled data-driven assessments of advertising effectiveness and optimizations in user experience, significantly contributing to the bank's overall strategic objectives.
+
+
+                </p>
+				<h5>Strategic Significance</h5>
+				By creating an automated, efficient data transformation process, the project ensured continuous, reliable data insights—a critical capability that persisted even in my absence. The initiative exemplified how strategic data engineering can dramatically enhance organizational decision-making capabilities.
             </div>
           </div>
           <div class="col-md-5">
@@ -302,11 +337,29 @@
           <div><h4 class="hover-underline">Developing a customer segmentation approach to reduce marketing expenses by 20%</h4></div>
           <div class="col-md-7">
             <div class="project-content">
-              <p>
-              At Independence Blue Cross, I led a project focused on optimizing our direct mail marketing for health insurance enrollment. To do this, I employed Random Forest techniques to identify the most promising prospects for our mailers. The goal was to make our marketing campaigns more cost-effective and efficient. I used Random Forest to build predictive models that assessed the likelihood of individuals enrolling in health insurance after receiving our mailers. This involved tasks like data preprocessing, feature engineering, and model selection.</p>
-              <p>
-              I fine-tuned the algorithm to identify prospects with the highest enrollment potential by analyzing various factors like demographics, health history, and past mailing responses. The results were significant. Through this data-driven approach, we managed to reduce our marketing expenses by over 20% while achieving the same enrollment results as in previous years. Targeting prospects with the highest likelihood of enrolling made our operations more efficient and improved our return on investment.
-              </p>
+              <p><h5>Project Overview</h5></p>
+                <p>
+                  At Independence Blue Cross, I led a strategic project to optimize direct mail marketing for health insurance enrollment through advanced predictive modeling. The primary objective was to enhance the cost-effectiveness and efficiency of our marketing campaigns by leveraging data science techniques.
+				</p>
+			  <p><h5>Technical Approach</h5></p>
+				I employed Random Forest machine learning techniques to build predictive models that could assess the likelihood of individuals enrolling in health insurance after receiving our mailers. This sophisticated approach required comprehensive data analysis, including:
+                <ul>
+                  <li>Rigorous data preprocessing</li>
+                  <li>Sophisticated feature engineering</li>
+                  <li>Careful model selection and validation</li>
+                </ul>
+				The core of my methodology involved fine-tuning the algorithm to identify prospects with the highest enrollment potential. This involved a multifaceted analysis of key factors such as demographics, health history, and historical mailing response patterns.
+
+                <p><h5>Project Impact</h5></p>
+                <p>
+                  The data-driven approach yielded remarkable results:
+			    <ul>
+                  <li>Reduced marketing expenses by over 20%</li>
+                  <li>Maintained comparable enrollment numbers compared to previous campaigns</li>
+                  <li>Significantly improved operational efficiency and marketing return on investment</li>
+                </ul>
+					By precisely targeting prospects with the highest likelihood of enrollment, we transformed our marketing strategy from a broad-based approach to a laser-focused, analytically driven campaign.
+                </p>
             </div>
           </div>
           <div class="col-md-5">
@@ -326,38 +379,103 @@
       </div>
       <div class="project" onclick="toggleProject(this)">
         <div class="row">
-          <div><h4 class="hover-underline">Fixing Chase's platform-wide Interstitial feature </h4></div>
+          <div><h4 class="hover-underline">Unifying Digital Customer Acquisition at Chase </h4></div>
           <div class="col-md-7">
             <div class="project-content">
-              <p>
-              In my role at JP Morgan Chase, I played a pivotal part in identifying and addressing a critical issue related to the effectiveness of the "Announcements" feature which is intended to provide information on changes after a customer signs in. It began when I performed fundamental research to assess the feature's performance. What caught my attention was that the Announcements were consistently underperforming, falling far below the expected metrics. <strong>It became evident that a significantly lower number of users were actually seeing these Announcements, even though the feature was designed to reach everyone eventually.</strong> In some instances, the visibility rate for an Announcement was as low as 30%.</p>
-              <p>
-              Upon digging deeper, I uncovered several key insights that shed light on the problem. First, I realized that all "Sign in interstitials," including "Announcements," were competing for priority in terms of display. Second, I discovered that the platform responsible for showcasing these interstitials wasn't under the jurisdiction of any internal team, resulting in a lack of controls and design guidelines. Third, a closer examination of other "Sign in interstitials" revealed a stark lack of design cohesion across the board. Lastly, I found that some of these interstitials were broken, repeatedly disrupting users instead of being dismissed after the initial display. User feedback in our Voice of Customer (VOC) channels confirmed that this issue was causing significant frustration.</p>
-              <p>
-              <strong>To tackle this issue head-on, my team within the organization took charge of the "Sign in interstitials" platform. We implemented comprehensive design guidelines, ensuring consistency and effectiveness across all interstitials.</strong> Additionally, we fixed the broken ones, ensuring that they would function correctly and no longer disrupt users excessively. This initiative not only improved the user experience but also enhanced our ability to effectively communicate important announcements to our customers.
-              </p>
+              <p><h5>Project Context</h5></p>
+                <p>
+					When I arrived at Chase, the organization faced significant data management and collaboration challenges. Each product group (Checking, Savings, Credit Cards, Personal Loans, Mortgages, Auto Leases and Auto Loans) operated in silos, performing independent analysis, reporting, and communication. This fragmented approach led to:
+				</p>
+				<ul>
+                  <li>Inefficient resource allocation</li>
+                  <li>Inconsistent performance analysis across product groups</li>
+                  <li>Inability to prioritize bankwide success</li>
+                </ul>
+			  <p><h5>Strategic Solution</h5></p>
+				I took the lead in developing a cohesive data management framework designed to facilitate consistent performance evaluation across various units. The core of this transformation was a comprehensive overhaul of data management practices.
+			  <p><h5>Technical Approach</h5>
+			  The project centered on standardizing two critical data sources:
+
+                <ul>
+                  <li><strong>Transactional enrollment data</strong></li>
+                  <li><strong>Behavioral clickstream data associated with the customer acquisition process</strong></li>
+                </ul>
+				My approach involved an in-depth research of the user journey, including meticulous tracking and documentation of all links and pages leading to customer applications. This detailed investigation allowed me to:
+				<ul>
+                  <li>Construct a comprehensive taxonomy of user interactions</li>
+                  <li>Create a sophisticated Teradata script that transformed billions of rows in the Adobe dataset</li>
+                  <li>Develop a structured acquisition table with thousands of rows, enabling consistent analysis across product groups</li>
+                </ul>
+				</p>
+
+                <p><h5>Project Impact</h5></p>
+                <p>
+                  The implementation of this standardized framework had profound implications for Chase's operational effectiveness:
+				  
+				  <p><strong>Data Analytics Transformation</strong>
+					<ul>
+					  <li>Established a universal data repository</li>
+					  <li>Enabled easy comparison of performance metrics across different product groups</li>
+					  <li>Facilitated data-driven discussions using a common script</li>
+					  <li>Eliminated reliance on separate and delayed data sources</li>
+					</ul></p>
+				  <strong>Organizational Benefits</strong>
+					<ul>
+					  <li>Enhanced decision-making agility</li>
+					  <li>Provided a holistic "All Chase" view of products</li>
+					  <li>Enabled high-level product prioritization</li>
+					  <li>Broke down competitive silos between product groups</li>
+					</ul>
+				<p><h5>Outcome and Impact</h5></p>
+				This organizational overhaul fundamentally transformed Chase's approach to data management and inter-departmental collaboration. By creating a standardized framework, we not only improved our data analytics capabilities but also fostered a more integrated, strategic approach to understanding and growing our business.
+                </p>
             </div>
           </div>
           <div class="col-md-5">
-            <img src="assets/img/WorkReference/ChaseAnnouncements.png" alt="Project Image 1" style="display: none;" width="100%">
+            <img src="assets/img/WorkReference/ChaseHomepage.png" alt="Project Image 1" style="display: none;" width="100%">
           </div>
         </div>
       </div>
       <div class="project" onclick="toggleProject(this)">
         <div class="row">
-          <div><h4 class="hover-underline">Unifying Chase's digital acquisition approach </h4></div>
+          <div><h4 class="hover-underline">Fixing Chase's platform-wide Interstitial feature </h4></div>
           <div class="col-md-7">
             <div class="project-content">
-              <p>
-              When I arrived at Chase there was an expectation that each product group (Checking, Savings, Credit Cards, Personal Loans, Mortgages, Auto Leases and Auto Loans) perform their own analysis, reporting and communication. In addition, because each group was working independently these groups often competed for resources to eachothers' detriment. As a result, the analysis product groups performed was not comparable to eachother and <strong>bankwide success was not able to be the priority.</strong></p>
-              <p>
-              <strong>To tackle this challenge, I took the lead in developing a cohesive data management framework designed to facilitate consistent performance evaluation across various units.</strong> At the core of this endeavor was the overhaul and standardization of transactional enrollment data, as well as behavioral clickstream data associated with the acquisition process. This undertaking involved in-depth research into the user journey, including meticulous tracking and documentation of all links and pages leading to customer applications. By tracing these paths, we constructed a comprehensive taxonomy and subsequently created a Teradata script. This script efficiently organized the vast Adobe dataset, containing billions of rows, into a structured acquisition table of thousands of rows. This achievement established a common framework for analysis, streamlining the process and enhancing our ability to assess performance consistently across diverse products.</p>
-              <p>
-              The impact of this project had a profound effect on our understanding of our business. With the implementation of a standardized script and the establishment of a universal data repository, we gained the ability to easily compare each group's performance metrics. This newfound capability to engage in performance discussions using a common script, rather than relying on separate and delayed data sources, significantly enhanced our agility and decision-making abilities. It also provided us with a holistic "All Chase" view of our products, enabling us to prioritize products at a high level instead of locally. <strong>In essence, this organizational overhaul not only bolstered our data analytics capabilities but also facilitated more informed decision-making.</strong></p>
+              <p><h5>Project Context</h5></p>
+                <p>
+                  In my role at JP Morgan Chase, I played a pivotal part in identifying and addressing a critical issue related to the effectiveness of the "Announcements" feature, which is intended to provide information on changes after a customer signs in. My research began with a fundamental assessment of the feature's performance, revealing a significant problem: the Announcements were consistently underperforming and falling far below expected metrics.
+				</p>
+			  <p><h5>Problem Discovery</h5></p>
+				The initial investigation uncovered a stark performance issue: a dramatically low user visibility rate for Announcements. In some instances, the visibility rate was as low as 30%, meaning that despite the feature's design to reach all users, only a fraction were actually seeing these critical communications.
+			  <p><h5>Root Cause Analysis</h5>
+			  Digging deeper, I identified several key systemic issues:
+
+                <ol>
+                  <li><strong>Competing Priorities:</strong> All "Sign in interstitials" were competing for display priority, creating a complex visibility challenge.</li>
+                  <li><strong>Governance Gap:</strong> The platform responsible for showcasing these interstitials existed in an organizational blind spot—without clear ownership, there were no established controls or design guidelines.</li>
+                  <li><strong>Inconsistent Design:</strong> A comprehensive examination revealed a severe lack of design cohesion across different sign-in interstitials.</li>
+                  <li><strong>Technical Failures:</strong> Some interstitials were fundamentally broken, repeatedly disrupting users instead of being dismissed after initial display.</li>
+                </ol>
+				These technical and design shortcomings were not just theoretical problems. User feedback through our Voice of Customer (VOC) channels confirmed that these issues were causing significant user frustration.</p>
+
+                <p><h5>Strategic Resolution</h5></p>
+                <p>
+                  Taking decisive action, my team assumed control of the "Sign in interstitials" platform. Our comprehensive approach included:
+			    <ul>
+                  <li>Implementing robust design guidelines to ensure consistency and effectiveness</li>
+                  <li>Repairing broken interstitials to prevent user disruption</li>
+                  <li>Establishing clear controls for feature display and prioritization</li>
+                </ul>
+				<p><h5>Outcome and Impact</h5></p>
+				The initiative successfully transformed the Announcements feature, significantly improving user experience and our ability to communicate critical information to customers. By addressing both technical and design challenges, we created a more reliable and user-friendly communication channel.
+
+				<p><h5>Key Learnings</h5></p>
+				This project underscored the importance of holistic user experience design, demonstrating how seemingly minor technical issues can significantly impact customer communication and satisfaction.
+                </p>
             </div>
           </div>
           <div class="col-md-5">
-            <img src="assets/img/WorkReference/ChaseHomepage.png" alt="Project Image 1" style="display: none;" width="100%">
+            <img src="assets/img/WorkReference/ChaseAnnouncements.png" alt="Project Image 1" style="display: none;" width="100%">
           </div>
         </div>
       </div>
